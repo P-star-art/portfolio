@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" rel="stylesheet" />
+    <title>Pranav Dherange</title>
+  </head>
+  <body>
+    <nav class="navigation container">
+      <div class="nav-brand">IAMDEVELOPER</div>
+      <ul class="list-non-bullet nav-pills">
+        <li class="list-item-inline">
+          <a class="link" href="/">home</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link" href="/projects.html">projects</a>
+        </li>
+        <li class="list-item-inline">
+          <a class="link link-active" href="/blogs.html">blogs</a>
+        </li>
+      </ul>
+    </nav>
+
+    
+
+    <section style="max-width: 960px; margin: 0px auto">
+        <a  class="back-btn" href="./blogs.html"> < Back to Blogs</a>
+      <header style="text-align: center" class="hero">
+        <h1 class="blog-title">How JS works?</h1>
+        <img
+          class="blog-img"
+          src="https://cdn-media-1.freecodecamp.org/images/0*zdzWJW4DiWkFjDnY.jpg"
+        />
+        <small style="color: var(--dark-gray)">5 min. read</small>
+      </header>
+
+      <section>
+        <div class="container">
+          <p class="blog-para">
+            Everyone loves Javascript,Ain't that right!!!.But have u ever
+            wondered how javascript works under the hood?What happens to the
+            code which u write in your favourite text-editor and then
+            surprisingly it works all well in the browser when executed.Want to
+            know more about it?
+          </p>
+          <h2 style="color: var(--dark-gray); text-align: center">
+            So Let's get started!!!
+          </h2>
+          <p class="blog-para">
+            First let's figure out what happens with your code when you execute
+            in your browser.The code which you write is not understandable by
+            your browser.The code is in 0's and 1's that's why browser is not
+            able to recognize it.<strong
+              >So how does it work in the browser???</strong
+            >
+            There is a tool called <strong>Javascript Engine</strong>.
+            Javascript Engine helps run your code in browser.Every broswer has
+            their own Javascript Engine, like Chrome has
+            <strong> Chrome's V8 Engine</strong>. Internet Explorer has
+            <strong>Chakra.</strong>Mozilla Firefox has
+            <strong>SpiderMonkey</strong> and so on... But most used Javascript
+            Engine is Chrome's V8 engine.
+          </p>
+          <p class="blog-para">
+            Okay! So now we know how Javascript works in the browser.But what's
+            inside this Javascript Engine 🤔. Let's find out.
+          </p>
+          <img class="blog-use" src="./images/je.png" />
+          <p class="blog-para">
+            So ever heard of <strong> memory leak? </strong> A memory heap has
+            limited space. When you have too much of unused memory that you
+            dont't use up, the space gets filled.You must have heard of
+            <strong>stackoverflow!!!</strong>. Well that's when your call
+            <strong>stack overflows</strong>, as it also has limited space.
+          </p>
+          <p class="blog-para">
+            Javascript is <strong>single-threaded</strong> language, which means
+            it has only <strong>one call stack</strong> and therefore it can
+            execute just one task at a time.
+          </p>
+          <p class="blog-para"> 
+            Wait I have heard that Javascript is Asynchronous then how is it we
+            call it single-threaded?Let's take an example of setTimeout
+            function.setTimeout is asynchronous and it is given to us by Web
+            API's(it provides us many other API's), so technically setTimeout is <strong>not</strong> a part of Javascript.
+          </p>
+          <h2 style="color: var(--dark-gray); text-align: center">
+            Hope you enjoyed it 😊
+          </h2>
+
+        </div>
+      </section>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-header">social media presence</div>
+        <ul class="social-links list-non-bullet">
+          <li class="list-item-inline">
+            <a class="link" href="https://github.com/P-star-art"> 
+              <img style="width: 25px; height: 25px;" class="icon-img" src="./images/github.svg" />
+            </a>
+          </li>
+          <li class="list-item-inline">
+            <a class="link" href="https://twitter.com/dherange_pranav">
+              <img style="width: 25px; height: 25px;" class="icon-img" src="./images/twitter.svg" />
+            </a>
+          </li>
+          <li class="list-item-inline">
+            <a class="link" href="https://www.linkedin.com/in/pranav-dherange-251b101a7/">
+              <img style="width: 25px; height: 25px;" class="icon-img" src="./images/linkedin.svg" />
+            </a>
+          </li>
+          <li class="list-item-inline">
+              <a class="link" href="https://www.instagram.com/pranav_1001/">
+                <img style="width: 25px; height: 25px;" class="icon-img" src="./images/instagram.svg" />
+              </a>
+          </li>
+        </ul>
+      </footer>
+  </body>
+</html>
